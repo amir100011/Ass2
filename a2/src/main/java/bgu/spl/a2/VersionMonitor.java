@@ -19,7 +19,7 @@ package bgu.spl.a2;
 public class VersionMonitor {
 
     private int version = 0;//The initial version equals to zero
-    private Object someLock;
+    private Object someLock = new Object();
 
     public int getVersion() {
         synchronized (someLock) {
